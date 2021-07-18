@@ -1,0 +1,35 @@
+
+.menu{
+	width: 100%;
+	padding: 0;
+	position: fixed;
+	display: flex;
+	bottom: 0;
+	margin: 0;
+	background: #26455C;
+}
+.menu .items{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+	display:inline-flex;
+	justify-content: space-around;
+}
+.menu .items li{
+
+	width: 100%;
+	text-align: center;
+
+}
+.menu .items li:hover{
+	background-color: #010440;
+	
+
+}
+a{
+	width: 25%;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+}
