@@ -1,0 +1,59 @@
+.um {
+    cursor: pointer;
+    background-image: url('pizza.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: #3f3232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.dois {
+    cursor: pointer;
+    background-image: url('pizza2.jpg');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tres {
+    background-image: url('pizza.png');
+    background-size: cover;
+    cursor: pointer;
+    background-color: seagreen;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes {
+    height: 50vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
