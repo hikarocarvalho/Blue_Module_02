@@ -8,9 +8,7 @@ var message ={
 const messages = [];
 const jsonfile = "../js/messages.json";
 function grow(){
-	document.getElementById("message").style.height="90%"
-	
-	document.getElementById("text").style.height="30%";
+	document.getElementById("text").style.height="100px";
 }
 function read(){
 	messages.push(JSON.parse(jsonfile));

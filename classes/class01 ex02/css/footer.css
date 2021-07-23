@@ -7,7 +7,7 @@ body{
 	padding: 0;
 	width: 100%;
 	height: 100vh;
-	background-color: #5e5e5e;
+	background-color: #7D6B7D;
 	display: flex;
 	justify-content: center;
 }
@@ -20,7 +20,7 @@ body{
 	
 }
 .contact section .message{
-	background-color: #FEA443;
+	background-color: #FF665A;
 	border-radius: 20px;
 	display: flex;
 	align-content:  center;
@@ -34,9 +34,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 80%;
-	height: 100%;
-	padding:10%;
+	width: 100%;
 
 }
 .contact section .message form input{
@@ -47,11 +45,11 @@ body{
 }
 .contact section .message form label{
 	margin-top: 5px;
-	color:rgb(0, 0, 0);
+	color:white;
 	font-size: 15px;
 }
 .contact .message header{
-	color:rgb(0, 0, 0);
+	color:white;
 	font-size: 20px;
 }
 .contact section form textarea,.contact section button,.contact section form input{
@@ -59,7 +57,7 @@ body{
 	width: 100%;
 	border-radius: 20px;
 	border-width: 5px;
-	border-color: rgb(0, 0, 0);
+	border-color: blue;
 
 }
 .contact section .message form textarea:focus,.contact section .message button:focus,.contact section .message form input:focus{
@@ -68,22 +66,22 @@ body{
 }
 .contact section .message button{
 
-	background-color: #000000;
+	background-color: #1B98E0;
 	margin:0;
 	margin-top: 5%;
 	padding: 0;
 	height: 50px;
 	border:none;
 	font-size: 14px;
-	color:rgb(255, 123, 0);
+	color:white;
 	font-weight: bold;
 	margin-left: 1%;
 	
 	
 }
 .contact section .message button:hover{
-	background-color: rgb(65, 63, 60);
-	color: rgb(255, 123, 0);
+	background-color: white;
+	color: black;
 	
 }
 .contact section .links{
@@ -92,7 +90,7 @@ body{
 	margin-top: 5%;
 	width: 60%;
 	height: 70%;
-	background-color: rgb(65, 63, 60);
+	background-color: white;
 	box-shadow: 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
 	border-radius: 20px 0 0 20px
 }
@@ -107,22 +105,20 @@ body{
 .contact section .links figure{
 	display:flex;
 	justify-content: space-around;
-	background-color: #0b0c0c;
+	background-color: #1B98E0;
 	border-radius: 10px;
 	
 
 }
 .contact section .links figure:hover{
 	
-	background-color: #FEA443;
-	color:black;
-	font-weight: bold;
+	background-color: #FF665A;
 
 	
 
 }
 .contact a{
 	text-decoration: none;
-	color:rgb(255, 115, 0);
+	color:white;
 	font-size: 20px;
 }

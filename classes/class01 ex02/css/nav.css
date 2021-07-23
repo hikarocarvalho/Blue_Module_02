@@ -6,7 +6,7 @@
 	display: flex;
 	bottom: 0;
 	margin: 0;
-	background: #ee8f00;
+	background: #26455C;
 }
 .menu .items{
 	margin: 0;
@@ -23,13 +23,13 @@
 
 }
 .menu .items li:hover{
-	background-color: #ffb005;
+	background-color: #010440;
 	
 
 }
 a{
 	width: 25%;
 	font-size: 30px;
-	color: rgb(0, 0, 0);
+	color: white;
 	text-decoration: none;
 }
