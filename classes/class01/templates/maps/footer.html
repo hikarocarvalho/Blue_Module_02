@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>footer</title>
+	<link rel="stylesheet" type="text/css" href="../../static/css/footer.css">
+	<script type="text/javascript" src="../../static/js/include.js"></script>
+</head>
+<body>
+  <footer id="contact" class="contact">
+    <section>
+        <article class="links">
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/in/hikaro-fernandes-de-carvalho/">
+                  <figure>
+                    <img class="social" src="../../static/img/linkedin.png">
+                    <figcaption>Linkedin</figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/hikarocarvalho">
+                  <figure>
+                    <img class="social" src="../../static/img/github.png">
+                    <figcaption>GitHub</figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.instagram.com/hfernandesc/">
+                  <figure>
+                    <img class="social" src="../../static/img/insta.png">
+                    <figcaption>Instagram</figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.youtube.com/channel/UCb3Pa3X0d-IeBuQqgVgnWzg">
+                  <figure>
+                    <img class="social" src="../../static/img/youtube.png">
+                    <figcaption>Youtube</figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+        </article>
+        <article id="message" class="message">
+        <header>Mensagem</header>
+            <form id="form" action="/send" method="POST">
+                <label for="input_name">Nome:</label>
+                <input type="text"id="input_name" name="input_name">
+                <label for="input_email">E-mail</label>
+                <input type="mail" id="input_email" name="input_email">
+                <label for="mesage" >Mensagem</label>
+                <textarea onclick="grow()" name="input_message" id="input_message" placeholder="Digite sua mensagem">
+
+                </textarea>
+                <button id="send" class="button" type="submit">Enviar</button>
+           </form>
+           <p class="statusmessage">{{returnmessage}}</p>
+           <div id="load" class="load">
+            <p>Enviando mensagem</p>
+            <div id="loader" class="loader"></div>
+         </div>
+        </article>
+    </section>
+  </footer>
+  <!--
+  <script>
+    document.getElementById("send").addEventListener("click", function(event){
+      event.preventDefault();
+      console.log("foi");
+      write();
+    });
+    </script>
+  -->
+  <script src="../../static/js/prevent.js"></script>
+</body>
+</html>

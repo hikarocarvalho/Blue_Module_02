@@ -1,0 +1,171 @@
+body{ 
+  margin:0;
+  padding: 0;
+}
+.contact{
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #5e5e5e;
+	display: flex;
+	justify-content: center;
+}
+.contact section{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	width: 90%;
+	height: 80%;
+	margin: 0;
+	padding: 0;
+	
+}
+.contact section .message{
+	background-color: #FEA443;
+	border-radius: 20px;
+	display: flex;
+	align-content:  center;
+	flex-direction: column;
+	width: 30%;
+	height: 80%;
+	padding: 2%;
+	box-shadow: 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.contact section .message form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	height: 100%;
+	padding:10%;
+
+}
+.contact section .message form input{
+	width: 100%;
+	height: 20px;
+	border-radius: 20px;
+	margin-top: 5px;
+}
+.contact section .message form label{
+	margin-top: 5px;
+	color:rgb(0, 0, 0);
+	font-size: 15px;
+}
+.contact .message header{
+	color:rgb(0, 0, 0);
+	font-size: 20px;
+}
+.contact section form textarea,.contact section button,.contact section form input{
+	margin-top: 5px;
+	width: 100%;
+	border-radius: 20px;
+	border-width: 5px;
+	border-color: rgb(0, 0, 0);
+
+}
+.contact section .message form textarea:focus,.contact section .message button:focus,.contact section .message form input:focus{
+	outline: 0;
+
+}
+.contact section .message .button{
+
+	background-color: #000000;
+	margin:0;
+	margin-top: 5%;
+	padding: 0;
+	height: 50px;
+	border:none;
+	font-size: 14px;
+	color:rgb(255, 123, 0);
+	font-weight: bold;
+	margin-left: 1%;
+	
+	
+}
+.contact section .message button:hover{
+	background-color: rgb(65, 63, 60);
+	color: rgb(255, 123, 0);
+	
+}
+.contact section .links{
+	display: flex;
+	flex-direction: column;
+	margin:0;
+	margin-top: 5%;
+	width: 70%;
+	height: 70%;
+	background-color: rgb(65, 63, 60);
+	box-shadow: 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 20px 0 0 20px
+}
+.contact section .links ul{
+	list-style: none;
+	text-decoration: none;
+
+}
+.social{
+	width: 50px;
+}
+.contact section .links figure{
+	display:flex;
+	justify-content: space-around;
+	background-color: #0b0c0c;
+	border-radius: 10px;
+	
+
+}
+.contact section .links figure:hover{
+	
+	background-color: #FEA443;
+	color:black;
+	font-weight: bold;
+
+	
+
+}
+.contact a{
+	text-decoration: none;
+	color:rgb(255, 115, 0);
+	font-size: 20px;
+}
+
+
+.contact section .message .load{
+	display: none;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 3rem;
+  }
+  
+.contact section .message .load p{
+	color: #000000;
+	font-weight: 700;
+	font-size: 2rem;
+	width: 100%;
+	text-align: center;
+	padding: 2rem;
+  }
+  
+.contact section .message .load .loader{
+	border: 13px solid rgb(0, 0, 0);
+	border-radius: 50%;
+	border-top: 13px solid rgb(255, 115, 0);
+	border-bottom: 13px solid rgb(255, 115, 0);
+	width: 80px;
+	height: 80px;
+	animation: spin 2s linear infinite;
+  }
+  
+  .statusmessage{
+	  color: green;
+  }
+  
+  @keyframes spin {
+	0% { 
+	  transform: rotate(0deg); 
+	}
+	100% { 
+	  transform: rotate(360deg); 
+	}
+  }
