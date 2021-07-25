@@ -1,33 +1,29 @@
 
 var message ={
+	method: 'POST',
 	name:"",
 	email:"",
-	telphone:"",
 	message:"",
 };
-const messages = [];
-const jsonfile = "../js/messages.json";
+var url = "../pgs/send.php";
 function grow(){
 	document.getElementById("message").style.height="90%"
 	
 	document.getElementById("text").style.height="30%";
 }
-function read(){
-	messages.push(JSON.parse(jsonfile));
-}
 function write(){
-	read();
 	message.name = document.getElementById("input_name").value;
-	message.name = document.getElementById("input_email").value;
-	message.name = document.getElementById("input_telphone").value;
-	message.name = document.getElementById("input_message").value;
+	message.email = document.getElementById("input_email").value;
+	message.message = document.getElementById("input_message").value;
 	console.log(message);
-	messages.push(message);
-	var dict = JSON.stringify(messages)
-	var dictstring = JSON.parse(dict);
-	var fs = require('fs');
-	fs.writeFile(jsonfile, dictstring, function(err, result) {
-   		if(err) console.log('error', err);
-	});
-	document.getElementById('contact').innerHTML='<h1 style='+'color:white;margin-top:20%;'+'>Mensagem Enviada<h1>';
+	console.log(url);
+	fetch(url,message).then(function(response){
+			console.log(response.json());
+			document.getElementById('form').innerHTML='<h1 style='+'color:black;margin-top:20%;'+'>Mensagem Enviada<h1>';
+		})
+		.catch(function(error){
+			console.log(error);
+		}); 
 }
+
+

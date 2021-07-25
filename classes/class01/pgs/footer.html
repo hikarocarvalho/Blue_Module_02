@@ -46,22 +46,29 @@
         </article>
         <article id="message" class="message">
         <header>Mensagem</header>
-            <form id="form">
+            <form id="form" action="/send" method="POST">
                 <label for="input_name">Nome:</label>
                 <input type="text"id="input_name" name="input_name">
                 <label for="input_email">E-mail</label>
                 <input type="mail" id="input_email" name="input_email">
-                <label for="input_telphone">Telefone</label>
-                <input type="tel" id="input_telphone" name="input_telphone"> 
                 <label for="mesage" id="input_message">Mensagem</label>
                 <textarea onclick="grow()" id="text" name="mesage">
                     
                 </textarea>
-          
+                <input id="send" class="button" type="submit" value="Send">
            </form>
-           <button onclick="write()">Enviar</button>
+           
         </article>
     </section>
   </footer>
+  <!--
+  <script>
+    document.getElementById("send").addEventListener("click", function(event){
+      event.preventDefault();
+      console.log("foi");
+      write();
+    });
+    </script>
+  -->
 </body>
 </html>
