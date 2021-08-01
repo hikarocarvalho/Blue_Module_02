@@ -23,6 +23,10 @@
        <td>-</td>
        <td><a href="https://github.com/hikarocarvalho/Blue_Module_02/tree/main/projects/herokuproject">Projeto 02</a></td>
       </tr>
+      <td>Projeto 03</td>
+       <td>-</td>
+       <td><a href="https://github.com/hikarocarvalho/Project_Pet_Sisters">Projeto 02</a></td>
+      </tr>
 
 
 </table>
@@ -50,6 +54,11 @@
           <td>03 </td>
           <td> 1 </td>
           <td> <a href="https://github.com/hikarocarvalho/Blue_Module_02/tree/main/classes/class03">diretório</a></td>
+      </tr>
+      <tr>
+          <td>04 </td>
+          <td> 1 </td>
+          <td> <a href="https://github.com/hikarocarvalho/Blue_Module_02/tree/main/classes/class04">diretório</a></td>
       </tr>
 
 </table>
