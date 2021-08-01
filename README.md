@@ -48,7 +48,7 @@
       </tr>
       <tr>
           <td>03 </td>
-          <td> 01 </td>
+          <td> 1 </td>
           <td> <a href="https://github.com/hikarocarvalho/Blue_Module_02/tree/main/classes/class03">diretório</a></td>
       </tr>
 
