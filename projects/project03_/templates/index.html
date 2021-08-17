@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <title>Irmãos de Estimação</title>
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="#">Irmãos de<span> estimação</span></a></div>
+            <ul class="menu">
+                <li class="cadastro_irmao"><a class="menu-cadastro_usuario">Cadastrar-se</a></li>
+                <li class="cadastro_irmao"><a class="menu-cadastro_usuario" href="/grouppartners">Créditos</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <section class="conteiner_geral">
+
+        <div class="home">
+            <div class="titulo">
+                <h1>Como funciona?</h1>
+            </div>
+            <div class="home_container">
+                <img src="{{ url_for('static', filename='img/ComoFuncionaFontePreta.jpeg') }}" alt="imagem de explicação" class="imghome">
+            </div>
+        </div>
+
+        <div class='login'>
+
+            <div class="centralizador">
+                <div class="header">
+                    <span class="titulologin">Conecte-se</span>
+                </div>
+                                                 
+                <form id=login action="/login" method="post">
+                    <label for="email">Email</label>
+                    <input name="email" type="email" placeholder="Digite seu email"></input>
+    
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha"></input>
+    
+                    <div class="btn">
+                        <button href="#" type="submit" class="btn_"> <a href="/perfil">Entrar</a></button>
+                     </div>         
+                </form>    
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section>
+        <div id="modal_cadastro" class="modal_container">
+            <div class="modal_content">
+                <button class="fechar">x</button>
+
+                <div class="cadastro">
+                    <h1>Cadastro</h1>
+                </div>
+                
+                <iframe src="/cadastrouser"></iframe>
+            </div>    
+        </div>
+    </section>
+
+</body>
+
+</html>

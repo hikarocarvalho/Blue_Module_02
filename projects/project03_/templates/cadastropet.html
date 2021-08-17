@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pet.css') }}">
+    <title>Casdrato Pet</title>
+</head>
+<body>
+
+    <form class="cadpet" id="CasdastroPet" action="/registerpet" method="POST"> 
+
+        <fieldset class="dadospessoais"> 
+            <label for="InputNome">Nome</label>
+            <input class="form-control" name="nome" id="InputNome" placeholder="Nome">       
+                
+            <label for="select_animal">Qual tipo de animal ?</label>
+            <select class="form-control" name="animais" id="animais">
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+            </select>
+    
+            <label for="input_idade">Idade do pet</label>
+            <input class="form-control" name="idadepet" id="input_idade" placeholder="digite a idade do pet">
+                  
+            <label for="select_peso">porte</label>
+            <select class="form-control" name='porte' id="porte">
+                <option value="pequeno">Pequeno</option>
+                <option value="medio">Médio</option>
+                <option value="grande">Grande</option>
+            </select>
+    
+            <label for="input_ração">Quantidade de ração por refeição.</label>
+            <input class="form-control" name="racao" id="input_ração" placeholder="digite a quantidade ">
+            
+        </fieldset>  
+        <fieldset class="dadospessoais">
+            <label for="text_medicamento">Toma medicamento ?</label>
+                <select id="medicamento" name="medicamento">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                <textarea name="qual_medicamento" class="form-control" id="medicamento"  cols="50" rows="5" placeholder="descreva aqui"></textarea>
+            
+                <label for="text_sobre">Fale um pouco sobre seu pet</label>
+                <textarea name="sobre_pet" class="form-control" id="input_sobre"  cols="50" rows="5" placeholder="Digite aqui"></textarea>
+
+                <label for="necessidade">possui alguma nescecidade especial?</label>
+                <select id="quintal" name="necessidade">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                <textarea name="descnecessidade" class="form-control" id="necessidade"  cols="50" rows="5" placeholder="descreva aqui"></textarea>
+        </fieldset>
+        <button type="submit">Cadastrar Pet</button>
+    </form>
+
+</body>
+</html>

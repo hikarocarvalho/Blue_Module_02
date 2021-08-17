@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviço</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/servico.css') }}">
+</head>
+<body>
+    <form action="/cadastratrabalho" method="POST" class="job">
+        <label for="data_inic">Data inicial Disponível:</label>
+        <input name="data_inic" type="date"></input>
+        <label for="data_fina">Data final Disponível:</label>
+        <input name="data_fina" type="date"></input>
+        <label for="horario_inic">Horário inicial:</label>
+        <input name="horario_inic" type="text"></iput>
+        <label for="horario_fina">Horário final:</label>
+        <input name="horario_fina" type="text"></iput>
+        <label for="valor_hora">Valor Hora:</label>
+        <input name="valor_hora" type="text"></iput>
+        <button type="submit">Publicar Trabalho</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Forms.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <script src="{{ url_for('static', filename='js/script.js') }}"></script> -->
+    <script src="{{ url_for('static', filename='js/cadastropeti.js') }}" defer></script>
+    <title>Perfil | Irmãos de Estimação</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="#">Irmãos de<span> estimação</span></a></div>
+                <ul class="menu">
+                    <li class="cadastro_irmao"><a href="/jobs">Serviços</a></li>
+                    <li class="cadastro_irmao"><a class="menu-cadastro_trab">Anunciar Serviço</a></li>
+                    <li class="cadastro_irmao"><a class="menu-cadastro_pet">Cadastrar Pet</a></li>
+                    <li class="cadastro_irmao"><a href="/perfil" >Perfil</a></li>
+                    <li class="cadastro_irmao"><a href="/logout">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section class="containerperfil">
+    <section class="perfil">
+        <h1>Dados do Perfil</h1>
+        <form class="telaperfil" action="/updateusuario" method="POST">
+
+                <label for="InputNome">Nome{{user.id}}</label>
+                <input name="nome" id="InputNome" value="{{user.nome}}" placeholder="Primeiro Nome">
+                          
+                <label for="InputSobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" value="{{user.sobrenome}}" id="InputSobrenome" placeholder="Segundo Nome">
+                
+                <label for="InputEmail">E-mail</label>
+                <input name="email" type="email" id="InputEmail" value="{{user.email}}" placeholder="exemplo@email.com">
+         
+                <label for="InputEndereço">Endereço</label>
+                <input type="text" name="Endereco" id="InputEndereco" value="{{user.endereco}}" placeholder="Digite seu endereço"></input>
+        
+                <label for="InputNum">N° Rua/Av</label>
+                <input type="text" id="inputNum" name="Num" value="{{user.num}}" placeholder="Digite o número da Rua/Av">
+    
+                <label for="InputComplemento">Complemento</label>
+                <input name="Complemento" type="text" value="{{user.complemento}}" placeholder="Digite seu complemento"></input>
+    
+                <label for="InputCEP">CEP</label>
+                <input type="number" placeholder="Digite seu CEP" value="{{user.cep}}" name="CEP" id="InputCEP"></input>
+    
+                <label for="InputDataNasciemento">Data de Nascimento</label>
+                <input type="date" id="InputDataNascimento" value="{{user.datanascimento}}" name="DataNascimento"></input> 
+                <button type="submit">Salvar Alterações</button>
+        </form>    
+    </section>
+   
+    <section class="pefil-pet">
+        {% for i in pet: %}
+            
+        <div>
+
+            <label for="InputNome">{{i.nome}}</label>
+            
+    
+            <label for="select_animal">{{i.typepet}}</label> 
+            
+            <label for="input_idade">{{i.age}}</label>
+            
+
+        </div> 
+            
+        {% endfor %}
+    </section>
+    
+
+</section>
+
+<section>
+    <div id="modal_cadastro_pet" class="modal_container">
+        <div class="modal_content">
+            <button class="fechar">x</button>
+
+            <div class="cadastro">
+                <h1>Cadastro do Pet</h1>
+            </div>
+            
+            <iframe src="/cadastropet"></iframe>
+        </div>    
+    </div>
+</section>
+<div id="modal_cadastro_trab" class="modal_container">
+    <button class="fechar">x</button>
+    <iframe src="/cadastrotrab"></iframe>
+</div>
+</body>
+
+</html>

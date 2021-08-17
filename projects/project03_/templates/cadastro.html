@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Forms.css') }}">
+    <title>CADASTRO| Irmãos de Estimação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body >
+
+
+    <form class="FormCadNovoUsuario" action="/complemento" method="POST">
+
+        <fieldset class="dadospessoais"> 
+            <label for="InputNome">Nome</label>
+            <input name="nome" class="form-control" id="InputNome" placeholder="Primeiro Nome">
+                      
+            <label for="InputSobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" class="form-control" id="InputSobrenome" placeholder="Segundo Nome">
+                        
+            <label for="InputCPF">CPF</label>
+            <input name="CPF" id="InputCPF" placeholder="000.000.000-00" type="number" class="form-control"> 
+            
+            <label for="InputEmail">E-mail</label>
+            <input name="email" type="email" class="form-control" id="InputEmail" placeholder="exemplo@email.com">
+
+            <label for="senha">Senha</label>
+            <input name="NovaSenha" type="password" class="form-control" id="Inputsenha" placeholder="Crie uma senha">
+
+            <label for="InputEmail">Senha</label>
+            <input name="SenhaConfirmacao" type="password" class="form-control" id="InputSenhaConfirmacao" placeholder="Confirme a senha">
+        
+        </fieldset>  
+
+        <fieldset class="dados">             
+            <label for="InputEndereço">Endereço</label>
+            <input type="text" class="form-control" name="Endereco" id="InputEndereco" placeholder="Digite seu endereço"></input>
+    
+            <label for="InputNum">N° Rua/Av</label>
+            <input type="text" id="inputNum" name="Num" class="form-control" placeholder="Digite o número da Rua/Av">
+
+            <label for="InputComplemento">Complemento</label>
+            <input name="Complemento" type="text" class="form-control" placeholder="Digite seu complemento"></input>
+
+            <label for="InputCEP">CEP</label>
+            <input type="number" placeholder="Digite seu CEP" class="form-control" name="CEP" id="InputCEP"></input>
+
+            <label for="InputDataNasciemento">Data de Nascimento</label>
+            <input type="date" class="form-control" id="InputDataNascimento" name="DataNascimento"></input>
+
+            <button id="seta" class="seta" type="submit">
+                
+            </button>
+        </fieldset>
+
+    </form>
+    
+</body>
+
+</html>
