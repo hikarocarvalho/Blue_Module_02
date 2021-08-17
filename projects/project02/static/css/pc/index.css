@@ -1,0 +1,38 @@
+
+body{
+	display: flex;
+  	flex-direction: column;
+  	margin: 0;
+  	padding: 0;
+  	width: 100vw;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: overlay;
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+  	
+}
+body::-webkit-scrollbar{
+	
+	display: none;
+}
+.main , .about,.backend,.frontend,.foot{
+	border-width: 0;
+	border-style: none;
+	margin:0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	
+	
+}
+
+footer{
+	position: absolute;
+	top: 480%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: orange;
+}

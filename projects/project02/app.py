@@ -36,11 +36,16 @@ def home():
 @app.route('/aboutme')
 def aboutme():
     return render_template('/maps/aboutme.html')
-# importa pagina de projetos
-# import projects page
-@app.route('/projects')
-def projects():
-    return render_template('/maps/projects.html')
+# importa pagina de projetos frontend
+# import forntend projects page
+@app.route('/frontend')
+def frontend():
+    return render_template('/maps/frontend.html')
+# importa pagina de projetos backend
+# import backend projects page
+@app.route('/backend')
+def backend():
+    return render_template('/maps/backend.html')
 # importa pagina de rodape 
 # import footer page
 @app.route('/footer')

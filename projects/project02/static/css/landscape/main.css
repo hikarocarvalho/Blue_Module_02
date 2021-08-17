@@ -10,7 +10,7 @@ body{
   height: 100vh;
 }
 .frontpage{
-  background-image: url("../img/sup-background.png");
+  background-image: url("../../img/sup-background.png");
   }
 .frontpage{
   display: flex;

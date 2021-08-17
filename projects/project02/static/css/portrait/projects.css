@@ -1,3 +1,4 @@
+@media only screen and (orientation: portrait) {
 * {
 	padding: 0;
 	margin: 0;
@@ -11,7 +12,9 @@ body {
 	display: flex;
 	background-color: #53534d;
 }
-.projects,.about{
+.project,.about{
+	width: 100%;
+	height: 100%;
 	font-size: 5px;
 }
 .projects{
@@ -22,9 +25,9 @@ body {
 	padding: 0;
 	position: absolute;
 	width: 90%;
-	height: 80%;
+	height: 90%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	z-index: 1;
@@ -33,8 +36,8 @@ body {
 	position: relative;
 	left: 0;
 	top: 0;
-	width: 50%;
-	height: 100%;
+	width: 100%;
+	height: 50%;
 	transform-style: preserve-3d;
 	transform: translate(0%, 0%) rotate3d(0,0, 0, 0deg);
 	transition: 2s;
@@ -51,7 +54,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	padding: 10%;
-	font-size: 4em;
+	font-size: 3vw;
 }
 
 .projects .project article:nth-child(1) {
@@ -90,26 +93,26 @@ body {
 }
 
 .projects main article:nth-child(1) {
-	transform: translateZ(19rem) rotate3d(0,1, 0, 0deg);
+	transform: translateZ(29rem) rotate3d(0,1, 0, 0deg);
 }
 
 .projects main article:nth-child(2) {
-	transform: translateX(19rem) rotate3d(0,1, 0, 90deg);
+	transform: translateX(29rem) rotate3d(0,1, 0, 90deg);
 }
 
 .projects main article:nth-child(3) {
-	transform: translateZ(-19rem) rotate3d(0,1, 0, 180deg);
+	transform: translateZ(-29rem) rotate3d(0,1, 0, 180deg);
 }
 
 .projects main article:nth-child(4) {
-	transform: translateX(-19rem) rotate3d(0,1, 0, 270deg);
+	transform: translateX(-29rem) rotate3d(0,1, 0, 270deg);
 }
 
 
 .left,.right{
 	position: absolute;
-	top: 45%;
-	z-index: 2;
+	top: 40%;
+	z-index: 4;
 	display: flex;
 	align-self: flex-end;
 	border: none;
@@ -120,12 +123,12 @@ body {
 
 .left{
 	right: 0;
-	background-image: url("../img/arrow-left.png");
+	background-image: url("../../img/arrow-left.png");
 	background-size: 100% 100%;
 }
 .right{
 	left: 0;
-	background-image: url("../img/arrow-right.png");
+	background-image: url("../../img/arrow-right.png");
 	background-size: 100% 100%;
 }
 .project article div{
@@ -139,7 +142,7 @@ body {
 	position: relative;
 	z-index: 5;
 	width: 100%;
-	height: 100%;
+	height: 20vh;
 	border: none;
 	margin: 0;
 	padding: 0;
@@ -149,13 +152,13 @@ body {
 	margin-bottom: 5%;
 	text-decoration: none;
 	font-weight: bolder;
-	font-size: 20px;
+	font-size: 4vw;
 }
 .projects main article:nth-child(2) div a,.projects main article:nth-child(4) div a{
 	margin: 0;
 	text-align: center;
 	width: 100%;
-	padding: 5%;
+	padding: 2%;
 	text-decoration: none;
 	color:#2e2e2d;
 	background-color: #FEA443;
@@ -169,7 +172,7 @@ body {
 	margin: 0;
 	text-align: center;
 	width: 100%;
-	padding: 5%;
+	padding: 2%;
 	text-decoration: none;
 	color: #FEA443;
 	cursor: pointer;
@@ -178,4 +181,9 @@ body {
 .projects main article:nth-child(1) div a:hover,.projects main article:nth-child(3) div a:hover{
 	background-color: #474745;
 	cursor: pointer;
+}
+.about label ul li a{
+	text-decoration: none;
+	color: #FEA443;
+}
 }

@@ -1,0 +1,52 @@
+
+@media only screen and (orientation: portrait) {
+  body{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color:#303030;
+  color:#FEA443;
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.frontpage{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../../img/sup-background.png");
+  display: block;
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Sans-serif;
+}
+.frontpage .question{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  left: 0;
+  top: 40%;
+  z-index: 2;
+  font-size: 50vh;
+  text-align: center;
+  
+}
+.frontpage .phrase{
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  margin:0;
+  padding: 0;
+  top:10%;
+  font-size: 7vh;
+  font-family: Sans-serif;
+  font-weight: bolder;
+}
+
+}

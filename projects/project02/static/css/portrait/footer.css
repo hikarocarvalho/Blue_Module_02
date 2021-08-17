@@ -1,3 +1,4 @@
+@media only screen and (orientation: portrait) {
 body{ 
   margin:0;
   padding: 0;
@@ -13,39 +14,42 @@ body{
 }
 .contact section{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-self: center;
 	width: 90%;
-	height: 80%;
+	height: 90%;
 	margin: 0;
 	padding: 0;
 	
 }
 .contact section .message{
 	background-color: #FEA443;
-	border-radius: 20px;
+	border-radius: 0 0 50px 50px;
 	display: flex;
 	align-content:  center;
 	flex-direction: column;
-	width: 30%;
-	height: 80%;
-	padding: 2%;
+	width: 100%;
+	height: 50%;
+
 	box-shadow: 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
 }
 .contact section .message form{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 80%;
+	padding: 5%;
+	width: 90%;
 	height: 100%;
-	padding:10%;
+	
 
 }
 .contact section .message form input{
-	width: 100%;
-	height: 20px;
+	
+	height: 7%;
 	border-radius: 20px;
 	margin-top: 5px;
+	
 }
 .contact section .message form label{
 	margin-top: 5px;
@@ -58,10 +62,11 @@ body{
 }
 .contact section form textarea,.contact section button,.contact section form input{
 	margin-top: 5px;
-	width: 100%;
+	width: 85%;
 	border-radius: 20px;
 	border-width: 5px;
 	border-color: rgb(0, 0, 0);
+	margin-left: 5%;
 
 }
 .contact section .message form textarea:focus,.contact section .message button:focus,.contact section .message form input:focus{
@@ -71,15 +76,16 @@ body{
 .contact section .message .button{
 
 	background-color: #000000;
+	width: 90%;
 	margin:0;
 	margin-top: 5%;
 	padding: 0;
 	height: 50px;
-	border:none;
+	border:5px solid #000000;
 	font-size: 14px;
 	color:rgb(255, 123, 0);
 	font-weight: bold;
-	margin-left: 1%;
+	margin-left: 5%;
 	
 	
 }
@@ -92,17 +98,20 @@ body{
 	display: flex;
 	flex-direction: column;
 	margin:0;
-	margin-top: 5%;
-	width: 70%;
-	height: 70%;
+	padding: 0;
+	width: 100%;
+	height: 50%;
 	background-color: rgb(65, 63, 60);
 	box-shadow: 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
-	border-radius: 20px 0 0 20px
+	border-radius: 50px 50px 0 0;
 }
 .contact section .links ul{
 	list-style: none;
 	text-decoration: none;
-
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: #FEA443;
 }
 .social{
 	width: 50px;
@@ -111,10 +120,11 @@ body{
 	display:flex;
 	justify-content: space-around;
 	background-color: #0b0c0c;
-	border-radius: 10px;
+	border-radius: 5px;
 	
 
 }
+
 .contact section .links figure:hover{
 	
 	background-color: #FEA443;
@@ -124,10 +134,15 @@ body{
 	
 
 }
-.contact a{
+.contact section .links li{
+	margin-top: 20%;
+}
+.contact section .links a{
 	text-decoration: none;
 	color:rgb(255, 115, 0);
 	font-size: 20px;
+	
+	padding: 0; 
 }
 
 
@@ -169,3 +184,4 @@ body{
 	  transform: rotate(360deg); 
 	}
   }
+}

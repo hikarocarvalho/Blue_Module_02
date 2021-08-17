@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/nav.css">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" type="text/css" href="../static/css/pc/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)" type="text/css" href="../static/css/landscape/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" type="text/css" href="../static/css/portrait/index.css">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" type="text/css" href="../static/css/pc/nav.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)"  type="text/css" href="../static/css/portrait/nav.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)"  type="text/css" href="../static/css/landscape/nav.css">
     <link rel="shortcut icon" href="../static/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" type="text/css" href="../../static/css/fontstyle.css">
     <script type="text/javascript" src="../static/js/include.js"></script>
     <title>Hikaro Carvalho</title>
 </head>
 <body >
     <iframe id="home" class="main" title="main" src="/main"></iframe>
     <iframe id="aboutme" class="about" title="aboutme" src="/aboutme"></iframe>
-    <iframe id="projects" class="project" title="projects" src="/projects"></iframe>
+    <iframe id="frontend" class="frontend" title="frontend" src="/frontend"></iframe>
+    <iframe id="backend" class="backend" title="backend" src="/backend"></iframe>
     <iframe id="contact" class="foot" title="footer" src="/footer"></iframe>
-    <nav class="menu">
-        <ul class="items">
-            <a href="#home"><li>Início</li></a>
-            <a href="#aboutme"><li>Sobre Mim</li></a>
-            <a href="#projects"><li>Meus Projetos</li></a>
-            <a href="#contact"><li>Contatos</li></a>
+    <nav id="menu" class="menu">
+        <ul id="items" class="items">
+            <a href="#home" onclick="hide()"><li>Início</li></a>
+            <a href="#aboutme" onclick="hide()"><li>Sobre Mim</li></a>
+            <a href="#frontend" onclick="hide()"><li>Projetos Frontend</li></a>
+            <a href="#backend" onclick="hide()"><li>Projetos backend</li></a>
+            <a href="#contact" onclick="hide()"><li>Contatos</li></a>
         </ul>
     </nav>
-   
+   <footer>
+    Copyright © - Todos os direitos reservados <br>- HIKARO FERNANDES DE CARVALHO.
+   </footer>
 </body>
 </html>
