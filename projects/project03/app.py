@@ -4,7 +4,7 @@ from datetime import datetime,date
 # here we set all app configs
 # aqui configuramos o app
 app = Flask(__name__) 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://xhvtplqn:ESYFvQFVgh8m1YLRbT4MZ_c3DqrD_S5b@tuffi.db.elephantsql.com/xhvtplqn'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://'
 db = SQLAlchemy(app)
 app.secret_key ="123456"
 # here are all db classes
