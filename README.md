@@ -21,7 +21,7 @@
       <tr>
        <td>Projeto 02</td>
        <td>10.0</td>
-       <td><a href="https://github.com/hikarocarvalho/Blue_Module_02/tree/main/projects/herokuproject">Projeto 02</a></td>
+       <td><a href="https://github.com/hikarocarvalho/Blue_Module_02/tree/main/projects/project02">Projeto 02</a></td>
       </tr>
       <td>Projeto 03</td>
        <td>10.0</td>
