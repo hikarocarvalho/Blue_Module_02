@@ -1,7 +1,7 @@
 # | HTML | CSS | JAVASCRIPT | PYTHON | FLASK |
 
-# Here are posted my exercises in python, made in Blueetech course.
-### (Aqui estarei postando meus exercícios em python, feitos no curso da Blueedtech. Module 02)
+# Here are posted my exercises from the Blueetech course - Module 02.
+### (Aqui estarei postando meus exercícios em python, feitos no curso da Blueedtech - Modulo 02)
  
 
 <table align="center" border="0">
@@ -22,6 +22,10 @@
        <td>Projeto 02</td>
        <td>-</td>
        <td><a href="https://github.com/hikarocarvalho/Blue_Module_02/tree/main/projects/herokuproject">Projeto 02</a></td>
+      </tr>
+      <td>Projeto 03</td>
+       <td>-</td>
+       <td><a href="https://github.com/hikarocarvalho/Project_Pet_Sisters">Projeto 02</a></td>
       </tr>
 
 
@@ -50,6 +54,11 @@
           <td>03 </td>
           <td> 1 </td>
           <td> <a href="https://github.com/hikarocarvalho/Blue_Module_02/tree/main/classes/class03">diretório</a></td>
+      </tr>
+      <tr>
+          <td>04 </td>
+          <td> 1 </td>
+          <td> <a href="https://github.com/hikarocarvalho/Blue_Module_02/tree/main/classes/class04">diretório</a></td>
       </tr>
 
 </table>
